@@ -12,7 +12,7 @@
     <ROW Property="ARPCONTACT" Value="user95401@gmail.com"/>
     <ROW Property="ARPHELPLINK" Value="https://github.com/user95401/GeodeModInstaller/issues"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
-    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPPRODUCTICON" Value="ext.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="ARPURLINFOABOUT" Value="https://github.com/user95401/GeodeModInstaller/issues"/>
@@ -39,7 +39,6 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
-    <ROW Directory="Assets_Dir" Directory_Parent="APPDIR" DefaultDir="Assets"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="geode_Dir" Directory_Parent="APPDIR" DefaultDir="geode"/>
     <ROW Directory="mods_Dir" Directory_Parent="geode_Dir" DefaultDir="mods"/>
@@ -48,7 +47,6 @@
     <ROW Component="AI_ExePath" ComponentId="{B09B43B5-359C-47CF-ABFB-B168FC94C4E7}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{F4AE27F5-A5AB-4FF5-A9D2-6D3209618039}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="ApplicationDescription" ComponentId="{1E1379FB-74E1-4107-9AF1-7FD66F96E2E5}" Directory_="APPDIR" Attributes="4" Condition="(VersionNT &gt;= 600)" KeyPath="ApplicationDescription"/>
-    <ROW Component="Assets" ComponentId="{8AD4F624-EAA1-4680-9DE1-C3942B56A369}" Directory_="Assets_Dir" Attributes="0"/>
     <ROW Component="GeodeModInstaller.exe" ComponentId="{6CBC360E-8BB2-4FCE-8ACE-1C54A93CE4CD}" Directory_="geode_Dir" Attributes="0" KeyPath="GeodeModInstaller.exe"/>
     <ROW Component="mods" ComponentId="{C28E6EB1-EBC0-443F-9468-3D383A3F07F8}" Directory_="mods_Dir" Attributes="0"/>
   </COMPONENT>
@@ -178,7 +176,6 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
     <ROW Directory_="mods_Dir" Component_="mods" ManualDelete="false"/>
-    <ROW Directory_="Assets_Dir" Component_="Assets" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
@@ -220,7 +217,6 @@
     <ROW Feature_="MainFeature" Component_="GeodeModInstaller.exe"/>
     <ROW Feature_="MainFeature" Component_="mods"/>
     <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
-    <ROW Feature_="MainFeature" Component_="Assets"/>
     <ROW Feature_="geode" Component_="GeodeModInstaller.exe"/>
     <ROW Feature_="MainFeature" Component_="ApplicationDescription"/>
   </COMPONENT>

@@ -1,3 +1,0 @@
-C:/Users/Lenovo/source/GeodeModInstaller/out/build/x86-Release/CMakeFiles/rebuild_cache.dir
-C:/Users/Lenovo/source/GeodeModInstaller/out/build/x86-Release/CMakeFiles/GeodeModInstaller.dir
-C:/Users/Lenovo/source/GeodeModInstaller/out/build/x86-Release/CMakeFiles/edit_cache.dir

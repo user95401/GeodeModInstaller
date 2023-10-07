@@ -1,8 +1,0 @@
-# ninja log v5
-8	295	7183653066531249	CMakeFiles/GeodeModInstaller.dir/src/icon.rc.res	c98bb34fbf47d7f3
-5	299	7183653066541222	CMakeFiles/GeodeModInstaller.dir/src/versoin.rc.res	d56e898a8cf28f23
-1	2913	7183722952383668	CMakeFiles/GeodeModInstaller.dir/src/GeodeModInstaller.cpp.obj	fb5295b48a3e406
-3167	3309	7183688065665527	../../../GeodeModInstaller.exe	1e281b845fb5745a
-2913	3061	7183722953865269	../../../geode/GeodeModInstaller.exe	f1f9b8e5bee9efd5
-1	2825	7183809818821613	CMakeFiles/GeodeModInstaller.dir/src/GeodeModInstaller.cpp.obj	fb5295b48a3e406
-2825	2973	7183809820292820	../../../geode/GeodeModInstaller.exe	f1f9b8e5bee9efd5
