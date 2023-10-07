@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\Windows Kits\10\App Certification Kit\appcert.exe" reset
+"C:\Program Files (x86)\Windows Kits\10\App Certification Kit\appcert.exe" test -apptype desktop -setuppath "C:\Users\Lenovo\source\GeodeModInstaller\GeodeModInstaller.exe" -setupcommandline /quiet -reportoutputpath "C:\Users\Lenovo\source\GeodeModInstaller\WindowsAppCertificationKit_Report.xml" > "C:\Users\Lenovo\source\GeodeModInstaller\WindowsAppCertificationKit_Output.log"
