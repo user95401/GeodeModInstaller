@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 
     std::filesystem::path mod;
     if (argc == 1) {
-        int msgboxID = MessageBox(nullptr, ("U must \"open\" .geode file using \"open with\" feature. (create file associations)\nAlso u can drag .geode file to me.\n\n\n"), "How to use:", MB_OK | MB_ICONWARNING);
+        int msgboxID = MessageBox(nullptr, ("U must \"open\" .geode file using \"open with\" feature. (create file associations)\n\nAlso u can drag .geode file to me."), "How to use:", MB_OK | MB_ICONWARNING);
         return msgboxID;
     }
     else mod = argv[1];
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 
     if (msgboxID == IDOK) {
         try {
-            std::filesystem::rename(mod, (me.parent_path() / "mods") / mod.filename());
+            std::filesystem::copy_file(mod, (me.parent_path() / "mods") / mod.filename(), std::filesystem::copy_options::overwrite_existing);
             MessageBox(nullptr, ("Mod:\n" + ((me.parent_path() / "mods") / mod.filename()).string()).c_str(),
                 "Installed .geode mod", MB_OK | MB_ICONINFORMATION);
         }
